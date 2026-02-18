@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BLACK BACKGROUND */
+body {
+    margin: 0;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* APP CARD */
+.app {
+    background: #111;
+    width: 420px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+#addBtn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.filters button {
+    border: none;
+    background: #222;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters .active {
+    background: #4caf50;
+}
+
+/* TASK LIST */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #1c1c1c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* TASK BUTTONS */
+.task-buttons button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+/* Completed */
+.task-buttons .complete {
+    color: #4caf50;
+}
+.task-buttons .complete:hover {
+    background: rgba(76, 175, 80, 0.2);
+}
+
+/* Rename */
+.task-buttons .rename {
+    color: #ff9800;
+}
+.task-buttons .rename:hover {
+    background: rgba(255, 152, 0, 0.2);
+}
+
+/* Delete */
+.task-buttons .delete {
+    color: #f44336;
+}
+.task-buttons .delete:hover {
+    background: rgba(244, 67, 54, 0.2);
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer button {
+    background: none;
+    border: none;
+    color: #f44336;
+    cursor: pointer;
+}
+.search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+    
